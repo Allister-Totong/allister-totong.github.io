@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="<?= $baseUrl ?>/" />
+        <title>Kidul Chatbot</title>
+        <style>
+            h1{
+                background-color: rgb(41, 145, 57);
+                text-align:center;
+            }
+            p{
+                text-align:center;
+            }
+            body{
+                background-color: rgb(116, 186, 224);
+            }
+            df-messenger {
+                --df-messenger-bot-message:rgb(41, 145, 57);
+                --df-messenger-button-titlebar-color:rgb(41, 145, 57);
+                --df-messenger-chat-background-color: #fafafa;
+                --df-messenger-font-color: white;
+                --df-messenger-send-icon: #878fac;
+                --df-messenger-user-message:rgb(61, 105, 155);
+            }
+        </style>
+    </head>
+    <body>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="ProjectRatuKidul"
+        agent-id="03b89351-9f57-47fc-918d-f481750723b3"
+        language-code="en"
+    ></df-messenger>
+    <h1>Ratu Kidul Chatbot</h1>
+    <p>A chatbot that can help in exploring the folklore surrounding Kanjeng Ratu Kidul.</p>
+    <p>Use the chatbot at the bottom right</p>
+    <p>You can ask questions surrounding:</p>
+    <ul>
+        <li>Theme</li>
+        <li>Characters</li>
+        <li>Disposition</li>
+        <li>Setting</li>
+        <li>Plot</li>
+        <li>Setting</li>
+    </ul>
+    </body>
+</html>
