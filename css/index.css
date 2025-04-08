@@ -6,13 +6,17 @@ p{
     text-align:center;
 }
 body{
+    background-color: rgb(232, 224, 174);
+}
+.description{
+    float: right;
     background-color: rgb(116, 186, 224);
 }
 df-messenger {
     --df-messenger-bot-message:rgb(41, 145, 57);
     --df-messenger-button-titlebar-color:rgb(41, 145, 57);
-    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-chat-background-color: rgb(232, 224, 174);
     --df-messenger-font-color: white;
-    --df-messenger-send-icon: #878fac;
+    --df-messenger-send-icon: rgb(61, 105, 155);
     --df-messenger-user-message:rgb(61, 105, 155);
 }
