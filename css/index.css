@@ -24,16 +24,23 @@ body{
 .illustration{
     margin-left: 10px;
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 8px;
 }
 .description{
     margin-right: 10px;
     padding: 20px;
     background-color: rgb(232, 224, 174);
+    border-radius: 8px;
 }
 .limitation{
     margin-top: 20px;
     padding: 20px;
     background-color: rgb(232, 224, 174);
+    border-radius: 8px;
 }
 df-messenger {
     --df-messenger-bot-message:rgb(41, 145, 57);
