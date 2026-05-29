@@ -47,12 +47,17 @@ clearButton.addEventListener("click", function () {
     refreshUI();
 });
 
+function formatRupiah(amount) {
+    return "Rp" + Math.abs(amount).toLocaleString("id-ID");
+}
+
 function updateBalance() {
     const total = transactions.reduce((sum, transaction) => {
         return sum + transaction.amount;
     }, 0);
 
-    balanceElement.textContent = `$${total.toFixed(2)}`;
+    const sign = total < 0 ? "-" : "";
+    balanceElement.textContent = `${sign}${formatRupiah(total)}`;
 }
 
 function renderTransactions() {
@@ -72,7 +77,7 @@ function renderTransactions() {
 
             <div class="transaction-right">
                 <span class="amount ${amountClass}">
-                    ${transaction.amount >= 0 ? "+" : "-"}$${Math.abs(transaction.amount).toFixed(2)}
+                    ${transaction.amount >= 0 ? "+" : "-"}${formatRupiah(transaction.amount)}
                 </span>
                 <button class="delete-btn" data-id="${transaction.id}">✕</button>
             </div>
